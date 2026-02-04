@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C556E12F3383CA008B28A8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C556E02F3383CA008B28A8 /* Accelerate.framework */; };
+		E10000001111111100000001 /* TunerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000001 /* TunerApp.swift */; };
+		E10000001111111100000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000002 /* ContentView.swift */; };
+		E10000001111111100000003 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000003 /* Note.swift */; };
+		E10000001111111100000004 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000004 /* Instrument.swift */; };
+		E10000001111111100000005 /* TunerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000005 /* TunerSettings.swift */; };
+		E10000001111111100000006 /* TuningPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000006 /* TuningPresets.swift */; };
+		E10000001111111100000007 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000007 /* AudioEngine.swift */; };
+		E10000001111111100000008 /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000008 /* PitchDetector.swift */; };
+		E10000001111111100000009 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000009 /* AudioSessionManager.swift */; };
+		E10000001111111100000010 /* TuningMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000010 /* TuningMath.swift */; };
+		E10000001111111100000011 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000011 /* Constants.swift */; };
+		E10000001111111100000012 /* TunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000012 /* TunerViewModel.swift */; };
+		E10000001111111100000013 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000013 /* TunerView.swift */; };
+		E10000001111111100000014 /* StrobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000014 /* StrobeView.swift */; };
+		E10000001111111100000015 /* NoteDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000015 /* NoteDisplayView.swift */; };
+		E10000001111111100000016 /* InputLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000016 /* InputLevelView.swift */; };
+		E10000001111111100000017 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000017 /* SettingsView.swift */; };
+		E10000001111111100000018 /* ReferencePitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000018 /* ReferencePitchView.swift */; };
+		E10000001111111100000019 /* CentOffsetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000019 /* CentOffsetsView.swift */; };
+		E10000001111111100000020 /* InstrumentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000020 /* InstrumentPickerView.swift */; };
+		E10000001111111100000021 /* CustomTuningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000021 /* CustomTuningView.swift */; };
+		E10000001111111100000022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10000011111111100000022 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52C556E02F3383CA008B28A8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E10000011111111100000001 /* TunerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerApp.swift; sourceTree = "<group>"; };
+		E10000011111111100000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E10000011111111100000003 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E10000011111111100000004 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
+		E10000011111111100000005 /* TunerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerSettings.swift; sourceTree = "<group>"; };
+		E10000011111111100000006 /* TuningPresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuningPresets.swift; sourceTree = "<group>"; };
+		E10000011111111100000007 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		E10000011111111100000008 /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		E10000011111111100000009 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		E10000011111111100000010 /* TuningMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuningMath.swift; sourceTree = "<group>"; };
+		E10000011111111100000011 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E10000011111111100000012 /* TunerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewModel.swift; sourceTree = "<group>"; };
+		E10000011111111100000013 /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
+		E10000011111111100000014 /* StrobeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrobeView.swift; sourceTree = "<group>"; };
+		E10000011111111100000015 /* NoteDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDisplayView.swift; sourceTree = "<group>"; };
+		E10000011111111100000016 /* InputLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLevelView.swift; sourceTree = "<group>"; };
+		E10000011111111100000017 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E10000011111111100000018 /* ReferencePitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencePitchView.swift; sourceTree = "<group>"; };
+		E10000011111111100000019 /* CentOffsetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentOffsetsView.swift; sourceTree = "<group>"; };
+		E10000011111111100000020 /* InstrumentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentPickerView.swift; sourceTree = "<group>"; };
+		E10000011111111100000021 /* CustomTuningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTuningView.swift; sourceTree = "<group>"; };
+		E10000011111111100000022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E10000011111111100000023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10000021111111100000001 /* Tuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10000031111111100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C556E12F3383CA008B28A8 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C556DF2F3383CA008B28A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52C556E02F3383CA008B28A8 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000001 = {
+			isa = PBXGroup;
+			children = (
+				E10000041111111100000002 /* Tuner */,
+				52C556DF2F3383CA008B28A8 /* Frameworks */,
+				E10000041111111100000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10000041111111100000002 /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				E10000041111111100000004 /* App */,
+				E10000041111111100000005 /* Audio */,
+				E10000041111111100000006 /* Models */,
+				E10000041111111100000007 /* ViewModels */,
+				E10000041111111100000008 /* Views */,
+				E10000041111111100000009 /* Utilities */,
+				E10000041111111100000010 /* Resources */,
+				E10000011111111100000023 /* Info.plist */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10000021111111100000001 /* Tuner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000001 /* TunerApp.swift */,
+				E10000011111111100000002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000005 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000007 /* AudioEngine.swift */,
+				E10000011111111100000008 /* PitchDetector.swift */,
+				E10000011111111100000009 /* AudioSessionManager.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000003 /* Note.swift */,
+				E10000011111111100000004 /* Instrument.swift */,
+				E10000011111111100000005 /* TunerSettings.swift */,
+				E10000011111111100000006 /* TuningPresets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000007 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000012 /* TunerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E10000041111111100000011 /* Tuner */,
+				E10000041111111100000012 /* Settings */,
+				E10000041111111100000013 /* Instruments */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000009 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000010 /* TuningMath.swift */,
+				E10000011111111100000011 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000022 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000011 /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000013 /* TunerView.swift */,
+				E10000011111111100000014 /* StrobeView.swift */,
+				E10000011111111100000015 /* NoteDisplayView.swift */,
+				E10000011111111100000016 /* InputLevelView.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000012 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000017 /* SettingsView.swift */,
+				E10000011111111100000018 /* ReferencePitchView.swift */,
+				E10000011111111100000019 /* CentOffsetsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E10000041111111100000013 /* Instruments */ = {
+			isa = PBXGroup;
+			children = (
+				E10000011111111100000020 /* InstrumentPickerView.swift */,
+				E10000011111111100000021 /* CustomTuningView.swift */,
+			);
+			path = Instruments;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000051111111100000001 /* Tuner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10000061111111100000001 /* Build configuration list for PBXNativeTarget "Tuner" */;
+			buildPhases = (
+				E10000071111111100000001 /* Sources */,
+				E10000031111111100000001 /* Frameworks */,
+				E10000081111111100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tuner;
+			productName = Tuner;
+			productReference = E10000021111111100000001 /* Tuner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10000091111111100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					E10000051111111100000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E100000A1111111100000001 /* Build configuration list for PBXProject "Tuner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E10000041111111100000001;
+			productRefGroup = E10000041111111100000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10000051111111100000001 /* Tuner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10000081111111100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10000001111111100000022 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10000071111111100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10000001111111100000001 /* TunerApp.swift in Sources */,
+				E10000001111111100000002 /* ContentView.swift in Sources */,
+				E10000001111111100000003 /* Note.swift in Sources */,
+				E10000001111111100000004 /* Instrument.swift in Sources */,
+				E10000001111111100000005 /* TunerSettings.swift in Sources */,
+				E10000001111111100000006 /* TuningPresets.swift in Sources */,
+				E10000001111111100000007 /* AudioEngine.swift in Sources */,
+				E10000001111111100000008 /* PitchDetector.swift in Sources */,
+				E10000001111111100000009 /* AudioSessionManager.swift in Sources */,
+				E10000001111111100000010 /* TuningMath.swift in Sources */,
+				E10000001111111100000011 /* Constants.swift in Sources */,
+				E10000001111111100000012 /* TunerViewModel.swift in Sources */,
+				E10000001111111100000013 /* TunerView.swift in Sources */,
+				E10000001111111100000014 /* StrobeView.swift in Sources */,
+				E10000001111111100000015 /* NoteDisplayView.swift in Sources */,
+				E10000001111111100000016 /* InputLevelView.swift in Sources */,
+				E10000001111111100000017 /* SettingsView.swift in Sources */,
+				E10000001111111100000018 /* ReferencePitchView.swift in Sources */,
+				E10000001111111100000019 /* CentOffsetsView.swift in Sources */,
+				E10000001111111100000020 /* InstrumentPickerView.swift in Sources */,
+				E10000001111111100000021 /* CustomTuningView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E100000B1111111100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6HC68467LJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E100000C1111111100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6HC68467LJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E100000D1111111100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tuner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tuner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The tuner needs microphone access to detect the pitch of your instrument.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E100000E1111111100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tuner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tuner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The tuner needs microphone access to detect the pitch of your instrument.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E10000061111111100000001 /* Build configuration list for PBXNativeTarget "Tuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100000D1111111100000001 /* Debug */,
+				E100000E1111111100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E100000A1111111100000001 /* Build configuration list for PBXProject "Tuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100000B1111111100000001 /* Debug */,
+				E100000C1111111100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10000091111111100000001 /* Project object */;
+}
