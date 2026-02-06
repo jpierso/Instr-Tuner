@@ -28,6 +28,7 @@ Built-in presets for:
 - **Banjo** 5-string (G4-D3-G3-B3-D4)
 - **Mandolin** (G3-D4-A4-E5)
 - **Violin** (G3-D4-A4-E5)
+- **Pedal Steel** E9 standard (B3-D4-E4-F#4-G#4-B4-E5-G#5-D#5-F#5)
 
 ### Customization
 - **Per-Note Cent Offsets**: Adjust each of the 12 notes individually (-50 to +50 cents)
