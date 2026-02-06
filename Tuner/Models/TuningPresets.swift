@@ -99,6 +99,26 @@ enum TuningPresets {
         isBuiltIn: true
     )
     
+    // MARK: - Pedal Steel (E9 Standard: B3-D4-E4-F#4-G#4-B4-E5-G#5-D#5-F#5)
+
+    static let pedalSteel = Instrument(
+        type: .pedalSteel,
+        name: "Pedal Steel (E9)",
+        strings: [
+            StringTuning(note: .FSharp, octave: 5), // 1st string (highest)
+            StringTuning(note: .DSharp, octave: 5), // 2nd string
+            StringTuning(note: .GSharp, octave: 5), // 3rd string
+            StringTuning(note: .E, octave: 5),      // 4th string
+            StringTuning(note: .B, octave: 4),       // 5th string
+            StringTuning(note: .GSharp, octave: 4),  // 6th string
+            StringTuning(note: .FSharp, octave: 4),  // 7th string
+            StringTuning(note: .E, octave: 4),       // 8th string
+            StringTuning(note: .D, octave: 4),       // 9th string
+            StringTuning(note: .B, octave: 3),       // 10th string (lowest)
+        ],
+        isBuiltIn: true
+    )
+
     // MARK: - All Presets
     
     static let allPresets: [Instrument] = [
@@ -108,7 +128,8 @@ enum TuningPresets {
         electricBass,
         banjo,
         mandolin,
-        violin
+        violin,
+        pedalSteel
     ]
     
     static func preset(for type: InstrumentType) -> Instrument {
@@ -120,6 +141,7 @@ enum TuningPresets {
         case .banjo: return banjo
         case .mandolin: return mandolin
         case .violin: return violin
+        case .pedalSteel: return pedalSteel
         }
     }
 }

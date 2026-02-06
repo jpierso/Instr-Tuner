@@ -9,6 +9,7 @@ enum InstrumentType: String, CaseIterable, Codable, Identifiable {
     case banjo = "Banjo"
     case mandolin = "Mandolin"
     case violin = "Violin"
+    case pedalSteel = "Pedal Steel"
     case chromatic = "Chromatic"
     
     var id: String { rawValue }
@@ -25,6 +26,8 @@ enum InstrumentType: String, CaseIterable, Codable, Identifiable {
             return "music.note"
         case .violin:
             return "music.quarternote.3"
+        case .pedalSteel:
+            return "slider.horizontal.3"
         case .chromatic:
             return "waveform"
         }
