@@ -92,43 +92,6 @@ struct SettingsView: View {
                     Text("Increase sensitivity if the tuner has difficulty hearing your instrument. Decrease if there's too much background noise.")
                 }
                 
-                // Current Instrument Section
-                Section {
-                    HStack {
-                        Label("Current Instrument", systemImage: viewModel.selectedInstrument.type.icon)
-                        Spacer()
-                        Text(viewModel.selectedInstrument.name)
-                            .foregroundColor(.secondary)
-                    }
-                    
-                    if !viewModel.selectedInstrument.strings.isEmpty {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Strings")
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                            
-                            HStack(spacing: 12) {
-                                ForEach(viewModel.selectedInstrument.strings) { string in
-                                    VStack(spacing: 2) {
-                                        Text(string.pitch.note.displayName)
-                                            .font(.system(size: 16, weight: .semibold))
-                                        Text("\(string.pitch.octave)")
-                                            .font(.system(size: 12))
-                                            .foregroundColor(.secondary)
-                                    }
-                                    .frame(width: 36)
-                                    .padding(.vertical, 6)
-                                    .background(Color.secondary.opacity(0.1))
-                                    .cornerRadius(6)
-                                }
-                            }
-                        }
-                        .padding(.vertical, 4)
-                    }
-                } header: {
-                    Text("Instrument")
-                }
-                
                 // About Section
                 Section {
                     HStack {
