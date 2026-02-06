@@ -7,6 +7,7 @@ struct TunerApp: App {
         let schema = Schema([
             CustomInstrument.self,
             UserSettings.self,
+            Temperament.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         
